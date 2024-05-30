@@ -10,7 +10,7 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    
+    background: linear-gradient(#87ceeb, #e0f6ff);
 }
 .pipe{
     position: absolute;
@@ -25,6 +25,11 @@
 }
 .jump{
     animation: jump 500ms  ease-out;
+}
+.clouds{
+    position: absolute;
+    width: 550px;
+    animation: clouds 20s infinite linear;
 }
 @keyframes pipe-animation {
     from{
@@ -50,5 +55,14 @@
     }
     100%{
         bottom: 0;
+    }
+}
+
+@keyframes clouds {
+    from{
+        right: -550px;
+    }
+    to {
+        right: 100%;
     }
 }
